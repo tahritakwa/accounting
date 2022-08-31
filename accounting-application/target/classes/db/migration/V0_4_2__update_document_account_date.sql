@@ -1,0 +1,3 @@
+UPDATE [dbo].[T_DOCUMENT_ACCOUNT]
+   SET [DA_DOCUMENT_DATE] = cast([DA_DOCUMENT_DATE] as date)
+WHERE cast([DA_DOCUMENT_DATE] as time) > '00:00:00'

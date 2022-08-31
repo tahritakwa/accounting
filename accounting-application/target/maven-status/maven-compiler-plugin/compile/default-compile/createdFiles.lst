@@ -1,0 +1,7 @@
+fr/sparkit/accounting/application/RestControlAdviser.class
+fr/sparkit/accounting/application/ResourceServerConfiguration.class
+fr/sparkit/accounting/application/WebConfig.class
+fr/sparkit/accounting/application/JpaAuditingConfiguration.class
+fr/sparkit/accounting/application/SwaggerConfig.class
+fr/sparkit/accounting/application/MainApplication.class
+fr/sparkit/accounting/utils/ApiError.class

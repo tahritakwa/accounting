@@ -1,0 +1,9 @@
+/app/accounting-application/src/main/java/fr/sparkit/accounting/utils/ApiError.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/package-info.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/RestControlAdviser.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/SwaggerConfig.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/utils/package-info.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/JpaAuditingConfiguration.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/ResourceServerConfiguration.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/WebConfig.java
+/app/accounting-application/src/main/java/fr/sparkit/accounting/application/MainApplication.java

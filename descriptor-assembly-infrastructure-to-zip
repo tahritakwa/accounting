@@ -1,0 +1,12 @@
+<assembly>
+	<id>infrastructure</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>infrastructure</directory>
+		</fileSet>
+	</fileSets>
+</assembly>

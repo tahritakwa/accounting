@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  accounting:
+    container_name: acct_cont
+    image: acct_image 
+    ports:
+      - 8081:8080
+    networks:
+      - stark_network
+networks:
+  stark_network:
+    external:  
+      name: stark_network

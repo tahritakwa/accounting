@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="LOG_FILE_INFO" value="logs/info.log"/>
+    <property name="LOG_FILE_ERROR" value="logs/error.log"/>
+
+    <include resource="org/springframework/boot/logging/logback/console-appender.xml"/>
+
+    <!-- Info Appender -->
+    <appender name="LOG_INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE_INFO}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+             <fileNamePattern>logs/archived/${LOG_FILE_INFO}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 10 days to keep -->
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+        </filter>
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSSS}|%-5level|%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Error Appender -->
+    <appender name="LOG_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE_ERROR}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/archived/${LOG_FILE_ERROR}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 10 days to keep -->
+            <maxHistory>10</maxHistory>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSSS}|%-5level|%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+    <logger name="fr.sparkit.accounting" additivity="false">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="LOG_INFO"/>
+        <appender-ref ref="LOG_ERROR"/>
+    </logger>
+
+</configuration>

@@ -1,0 +1,15 @@
+fr/sparkit/accounting/restcontroller/ChartAccountsController.class
+fr/sparkit/accounting/restcontroller/ReportJasperController.class
+fr/sparkit/accounting/restcontroller/AccountingConfigurationController.class
+fr/sparkit/accounting/restcontroller/TemplateAccountingController.class
+fr/sparkit/accounting/restcontroller/JournalController.class
+fr/sparkit/accounting/restcontroller/DBManagementController.class
+fr/sparkit/accounting/restcontroller/ReportController.class
+fr/sparkit/accounting/restcontroller/AccountController$1.class
+fr/sparkit/accounting/restcontroller/DocumentAccountController.class
+fr/sparkit/accounting/restcontroller/HistoricController.class
+fr/sparkit/accounting/restcontroller/BillDocumentController.class
+fr/sparkit/accounting/restcontroller/LetteringController.class
+fr/sparkit/accounting/restcontroller/FiscalYearController.class
+fr/sparkit/accounting/restcontroller/ReportExcelController.class
+fr/sparkit/accounting/restcontroller/AccountController.class

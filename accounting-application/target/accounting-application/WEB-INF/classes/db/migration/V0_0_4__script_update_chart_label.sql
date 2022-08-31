@@ -1,0 +1,15 @@
+UPDATE [dbo].[T_CHART_ACCOUNTS]
+SET CA_LABEL = N'Capital non amorti'
+WHERE CA_CODE = 10131;
+
+UPDATE [dbo].[T_ACCOUNT]
+SET AC_LABEL = N'Capital non amorti'
+WHERE AC_CODE = 10131001;
+
+UPDATE [dbo].[T_CHART_ACCOUNTS]
+SET CA_LABEL = N'Capital amorti'
+WHERE CA_CODE = 10132;
+
+UPDATE [dbo].[T_ACCOUNT]
+SET AC_LABEL = N'Capital amorti'
+WHERE AC_CODE = 10131002;
