@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('Git Checkout') {
       steps {
-        git branch: 'master', credentialsId: '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', url: 'https://github.com/tahritakwa/authentication.git'
+        git branch: 'master', credentialsId: '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', url: 'https://github.com/tahritakwa/authentication.git'
     }
   }
     stage('build and server') {
